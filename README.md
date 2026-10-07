@@ -14,7 +14,7 @@ Windows x64 预编译版，解压即用，无需 Node 环境：
 全部版本见 [Releases](https://github.com/geek-alpha/mcp-console/releases)。从源码构建：`npm install && npm start`（开发模式），`npm run dist:portable`（打包）。
 
 
-逻辑对齐 `D:\AI\wife_bot\mcp_pipe.py`：一条管道 = WebSocket（接入点）与一个 MCP 服务器子进程的 stdio 双向转发，断线按 1s → 2s → 5s 退避重连。
+逻辑与 `mcp_pipe.py`（同作者的另一版单文件实现）对齐：一条管道 = WebSocket（接入点）与一个 MCP 服务器子进程的 stdio 双向转发，断线按 1s → 2s → 5s 退避重连。
 
 ## 概念
 

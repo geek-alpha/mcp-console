@@ -230,7 +230,7 @@ export default function Servers() {
       {config.servers.length === 0 ? (
         <EmptyState
           title="还没有 MCP 服务器"
-          hint="点「载入内置」加入 Codex / OpenCode / DSH 的启停服务器，也可以直接导入 wife_bot 里现成的 mcp_config.json"
+          hint="点「载入内置」加入 Codex / OpenCode / DSH 的启停服务器，也可以直接导入已有的 mcp_config.json（与 mcp_pipe.py 等客户端共用一份配置）"
           action={
             <Button size="sm" variant="primary" onClick={() => void doImport()}>
               从 mcp_config.json 导入
@@ -352,7 +352,7 @@ export default function Servers() {
                   <input
                     type="text"
                     value={draft.server.cwd ?? ''}
-                    placeholder="D:\\AI\\wife_bot"
+                    placeholder="C:\\work\\my-mcp-server"
                     onChange={(e) => setDraft({ ...draft, server: { ...draft.server, cwd: e.target.value } })}
                   />
                 </Field>
