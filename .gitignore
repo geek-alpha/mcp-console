@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+.smoke-userdata/
+*.log
+*.bak-*
+o-app.err
+o-app.out
+smoke-report.json
+*.tsbuildinfo
+*.log*
